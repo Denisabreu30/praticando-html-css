@@ -4,7 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,user-scalable=0">
         <link rel="stylesheet" type="text/css" href="assets/css/template.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.qerySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        </script>
         <title>projeto-MediCenter</title>
     </head>
 
@@ -16,6 +26,11 @@
                 </div>
                 <div class="menu">
                     <nav>
+                        <div class="menuMobile">
+                            <div class="mm-line"></div>
+                            <div class="mm-line"></div>
+                            <div class="mm-line"></div>
+                        </div>
                         <ul>
                             <li class="active"><a href="">home</a></li>
                             <li><a href="">HOME</a></li>
@@ -201,6 +216,7 @@
                             <div class="area-text">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis nobis exercitationem.
                             </div>
+                           
                             <br><br>
                             <div>Medicenter Clinic</div>
                             <div class="area-text-1">
@@ -215,6 +231,12 @@
                                 <div>VIC 3033,Australia</div>
                                 <div><a href="medicenter-email">Medicenter@mail.com</a></div>
                             </div>
+                            <div class="img-icons">
+                                <a href=""><img src="https://img.icons8.com/material/24/000000/facebook-circled--v4.png"/></a>
+                                <a href=""><img src="https://img.icons8.com/material/24/000000/instagram-new--v1.png"/></a>
+                                <a href=""><img src="https://img.icons8.com/material/24/000000/twitter--v1.png"/></a>
+                                <a href=""><img src="https://img.icons8.com/material/24/000000/whatsapp--v1.png"/></a>
+                             </div>
                         </div> 
                     </div>
                     <div class="footer-areaitem">
@@ -254,9 +276,11 @@
                         </div>
                     </div>
                 </div>
-
+               
                 <div class="footer-copy">
                     Coyright - Todos os direitos reservados
+                    <a href="https://icons8.com/icon/TmcF3RYofD8n/facebook-num-círculo">Facebook num Círculo icon by Icons8</a>
+
                 </div>
             </div>
 

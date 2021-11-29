@@ -416,3 +416,88 @@ footer .widget-title-text{
     margin-left: 15px;
 }
 
+.img-icons{
+    background-color: white;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40x;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm-line{
+    background-color: #36a9e1;
+    height: 3px;
+}
+
+
+@media (max-width:600px) {
+
+    .banner-headline{
+        padding-left: 20px;
+    }
+
+    .banner-headline h1{
+        font-size: 55px;
+    }
+
+    .banner-headline h2{
+        font-size: 17px;
+    }
+
+    .banner-options{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside{
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-menu{
+        flex-direction: column;
+    }
+
+    .footer-area{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
